@@ -4,12 +4,12 @@ import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mlkit_image_labeling/google_mlkit_image_labeling.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:machine_learning/live_camera.dart';
 
-import 'live_object_detection.dart';
-import 'object_detection.dart';
+import 'presentation/live_object_detection.dart';
+import 'presentation/object_detection.dart';
 
 List<CameraDescription> cameras = <CameraDescription>[];
+
 Future<void> main() async {
   // Fetch the available cameras before initializing the app.
   try {
@@ -115,7 +115,9 @@ class _MyHomePageState extends State<MyHomePage> {
           Navigator.push(
             context,
             MaterialPageRoute(
-                builder: (context) => const ObjectDetection(title: "",)),
+                builder: (context) => const ObjectDetection(
+                      title: "",
+                    )),
           );
         },
         child: const Icon(Icons.camera_alt),

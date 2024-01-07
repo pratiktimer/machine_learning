@@ -4,7 +4,7 @@ import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mlkit_barcode_scanning/google_mlkit_barcode_scanning.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:machine_learning/live_camera.dart';
+import 'package:machine_learning/presentation/live_camera.dart';
 
 
 

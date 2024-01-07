@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 import 'package:google_mlkit_object_detection/google_mlkit_object_detection.dart';
 
-import 'main.dart';
+import '/main.dart';
 
 class LiveCameraPage extends StatefulWidget {
   LiveCameraPage({Key? key, required this.title}) : super(key: key);
